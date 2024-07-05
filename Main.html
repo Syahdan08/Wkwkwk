@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Layout Desain Responsif</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoKzCQWvEbbxF767PyxVM59D-BI6B5ms_k_vEmuUSKCHAUTy7-ngUmKGC&s=10') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    header {
+        background-color: black;
+        color: #fff;
+        padding: 5px 5px;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #444;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 11px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0px 0px;
+        padding: 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .main {
+        flex: 1 1 100%; /* Flexbox shorthand: grow, shrink, basis */
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0px;
+        color: white;
+        padding: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0px;
+    }
+
+    .sidebar {
+        flex: 1 1 100%; /* Flexbox shorthand: grow, shrink, basis */
+        background: rgba(0, 0, 0, 0.6);
+        padding: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0px;
+        color: white;
+    }
+
+    footer {
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 20px;
+        width: 90%;
+        clear: both; /* Clear floats */
+    }
+
+    @media (min-width: 768px) {
+        .main {
+            flex: 1 1 calc(70% - 20px); /* 70% width for main content */
+            margin-right: 20px;
+            margin-top: 0px;
+        }
+
+        .sidebar {
+            flex: 1 1 calc(30% - 20px); /* 30% width for sidebar */
+            margin-left: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h3>Tugas Informatika Kelas X</h3>
+    </header>
+
+    <nav>
+        <a href="http://localhost:8158/Ppp.html">Home</a>
+        <a href="http://localhost:8158/Coba.html#propil">Profile</a>
+        <a href="">Services</a>
+        <a href="http://localhost:8158/Coba.html#kontak">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section class="main">
+            <img src="https://via.placeholder.com/300x150" alt="Main Image">
+            <h2>Main Content Area</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero eros. Vestibulum sit amet velit convallis, tincidunt purus id, fermentum enim. Sed vestibulum justo id justo faucibus, eget efficitur nisi pharetra. Quisque ut malesuada ante, nec euismod arcu.</p>
+            <p>Nulla facilisi. Proin euismod varius libero ac dapibus. Nulla auctor auctor augue, ac pharetra metus condimentum nec. In hac habitasse platea dictumst. Vivamus in lectus vitae velit luctus lobortis. Morbi id mi a erat tincidunt sollicitudin sit amet non nunc. Integer lacinia efficitur felis, at consectetur nisl viverra a. Phasellus vitae elit lectus.</p>
+            <p>Integer in nulla vitae arcu pharetra euismod. Nullam nec dignissim nulla. Nam luctus hendrerit metus ac condimentum. Phasellus scelerisque diam vel turpis scelerisque suscipit. Nullam pellentesque, nisl non rhoncus condimentum, orci arcu gravida ligula, id consequat sapien felis sed metus. Donec et metus sed magna sodales dictum sit amet vel felis.</p>
+        </section>
+
+        <aside class="sidebar">
+            <img src="https://via.placeholder.com/300x150" alt="Sidebar Image">
+            <h2>Sidebar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec libero eros. Vestibulum sit amet velit convallis, tincidunt purus id, fermentum enim.</p>
+            <p>Vestibulum varius sapien quis orci interdum, in molestie dolor varius. Etiam euismod tortor sed leo iaculis interdum. Duis eget enim sem. Nunc nec nisl quis purus tincidunt bibendum. Suspendisse potenti.</p>
+        </aside>
+    </div>
+
+    <section style="background: rgba(0, 0, 0, 0.6">
+        <div class="container">
+            <img src="https://via.placeholder.com/300x150" alt="Section 2 Image">
+            <h2 style="color: white">Section 2</h2>
+            <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium interdum tortor, vitae pretium eros sollicitudin a. Curabitur in semper lacus. Sed et lectus vitae magna sollicitudin posuere non vitae nisl. Sed vehicula tellus non justo maximus hendrerit. Duis lobortis massa ac dui ultricies, vitae rutrum justo tempus.</p>
+            <p style="color: white">Donec rhoncus leo sed felis hendrerit, non congue odio pretium. Nullam efficitur congue metus, sed venenatis justo consectetur id. Fusce quis neque sed est consequat iaculis nec ac libero. Proin ultricies lorem vitae sem sagittis, id volutpat libero cursus. Nulla facilisi. Suspendisse euismod arcu in erat auctor, at fermentum lectus pharetra.</p>
+        </div>
+    </section>
+
+    <section style="background: rgba(0, 0, 0, 0.6">
+        <div class="container">
+            <img src="https://via.placeholder.com/300x150" alt="Section 3 Image">
+            <h2 style="color: white">Section 3</h2>
+            <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque velit at purus tempor, non pharetra ex tincidunt. Aliquam bibendum lectus eu lacus tincidunt, vel bibendum dui consequat. Nam vel mauris nec orci dignissim efficitur.</p>
+            <p style="color: white">Integer at lobortis risus. Mauris vel libero in tellus varius accumsan nec eu nibh. Quisque viverra justo a justo ultricies lobortis. Phasellus ac enim eget leo convallis egestas. Nulla facilisi.</p>
+        </div>
+    </section>
+  
+    <title>Beautiful Button</title>
+    <style>
+        .beautiful-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: rgba(0,0,0,0.9);
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .beautiful-button:hover {
+            background-color: red;
+            transform: scale(1.05);
+        }
+
+        .beautiful-button:active {
+            background-color: pink;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.instagram.com/syahrialrmdhn_00?igsh=b3Bmc3RpenQ3cWoz" class="beautiful-button">Penasaran &gt;</a>
+</body>
+</html>
+
+    <footer>
+      <h3 style="font-size: 1.5em">SRQA.</h3>
+      <p>Indonesia</p>
+        <p style="font-size: 0.7em">Copyright &copy; 2024 SRQA Company</p>
+    </footer>
+</body>
+</html>
